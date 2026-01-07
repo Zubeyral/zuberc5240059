@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zubeyr JavaScript Learning Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0d47a1;
+            color: white;
+            padding: 20px;
+        }
+        .nav-btn {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .nav-btn.active {
+            background: #2196f3;
+        }
+        .content-section {
+            display: none;
+            margin-top: 20px;
+        }
+        .content-section.active {
+            display: block;
+        }
+        .result-box {
+            background: #003300;
+            padding: 10px;
+            margin-top: 10px;
+            white-space: pre-wrap;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Zubeyr's JavaScript Learning Hub</h1>
+
+<button class="nav-btn active" data-section="home">Home</button>
+<button class="nav-btn" data-section="services">Services</button>
+<button class="nav-btn" data-section="contact">Contact</button>
+
+<section id="home" class="content-section active">
+    <h2>Home</h2>
+    <p>Ku soo dhawoow JavaScript Learning Hub</p>
+</section>
+
+<section id="services" class="content-section">
+    <h2>JavaScript Examples</h2>
+
+    <button id="objCreateBtn">Run Object Creation</button>
+    <div id="objCreateResult" class="result-box"></div>
+
+    <button id="objAccessBtn">Run Object Access</button>
+    <div id="objAccessResult" class="result-box"></div>
+
+    <button id="objIterateBtn">Run Object Iteration</button>
+    <div id="objIterateResult" class="result-box"></div>
+
+    <button id="jsonBtn">Run JSON</button>
+    <div id="jsonResult" class="result-box"></div>
+
+    <button id="runAllBtn">Run All</button>
+    <div id="runAllResult" class="result-box"></div>
+</section>
+
+<section id="contact" class="content-section">
+    <h2>Contact</h2>
+    <input id="name" placeholder="Name"><br><br>
+    <input id="email" placeholder="Email"><br><br>
+    <textarea id="message" placeholder="Message"></textarea><br>
+    <button id="submitBtn">Send</button>
+    <div id="contactResult" class="result-box"></div>
+</section>
+
+<!-- HALKAN KALIYA AYAAN JS KU XIRNAY -->
+<script src="main.js"></script>
+
+</body>
+</html>
